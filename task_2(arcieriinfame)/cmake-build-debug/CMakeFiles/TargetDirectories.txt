@@ -1,0 +1,3 @@
+/Users/achillerossi/Documents/UNIPR/C++/task_2(arcieriinfame)/cmake-build-debug/CMakeFiles/esercizio_matrice.dir
+/Users/achillerossi/Documents/UNIPR/C++/task_2(arcieriinfame)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/achillerossi/Documents/UNIPR/C++/task_2(arcieriinfame)/cmake-build-debug/CMakeFiles/rebuild_cache.dir

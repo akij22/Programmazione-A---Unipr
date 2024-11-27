@@ -1,0 +1,5 @@
+# ninja log v6
+466	626	1729531501157764090	esercizio_matrice	60bcde0e166b20fb
+4	317	1729415873082679699	CMakeFiles/esercizio_matrice.dir/main.cpp.o	5ac8f70d812132c2
+14	77	1729531567200450606	build.ninja	21144e4e4f831e6b
+0	466	1729531500691700321	CMakeFiles/esercizio_matrice.dir/x.cpp.o	3a96f2282e535efd
