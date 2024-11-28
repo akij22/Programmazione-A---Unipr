@@ -57,8 +57,9 @@ void f (int* pointer[100]) {
         cout << "Indirizzo di memoria della variabile nello heap: " << pointer[j] << ", valore: " << *pointer[j] << endl;
     }
 
-}
 
+    // MANCA PARTE DI DELETE
+}
 
 
 int main() {
