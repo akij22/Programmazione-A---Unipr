@@ -1,15 +1,12 @@
 #include <iostream>
 using namespace std;
 
-
-int main() {
-
-    int* pointer[1000];
-    bool status;
+// Funzione
+void f (int* pointer[100]) {
     int choice, index = 0;
-    int i = 0;
-    int countNewVariables = 0;
+    bool status;
     bool found = false;
+    int i = 0, countNewVariables = 0;
 
     do {
         cout << "Inserire un numero: ";
@@ -52,6 +49,17 @@ int main() {
     for (int j = 0; j < i; j++) {
         cout << "Indirizzo di memoria: " << pointer[j] << ", valore: " << *pointer[j] << endl;
     }
+
+}
+
+
+
+int main() {
+
+    int* pointer[1000];
+
+
+    f(pointer);
 
     return 0;
 }
