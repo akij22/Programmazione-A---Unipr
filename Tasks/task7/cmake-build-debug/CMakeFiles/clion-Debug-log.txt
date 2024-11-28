@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Tasks/task7" -B "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Tasks/task7/cmake-build-debug"
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja "-DCMAKE_CXX_FLAGS=-fsanitize=address -g" -G Ninja -S "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Tasks/task7" -B "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Tasks/task7/cmake-build-debug"
 -- The C compiler identification is AppleClang 16.0.0.16000026
 -- The CXX compiler identification is AppleClang 16.0.0.16000026
 -- Detecting C compiler ABI info

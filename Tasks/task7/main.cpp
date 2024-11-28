@@ -2,7 +2,7 @@
 using namespace std;
 
 // Funzione
-void f (int* pointer[100]) {
+void f (int* pointer[1000]) {
     int choice, index = 0;
     bool status;
     bool found = false;
@@ -58,7 +58,22 @@ void f (int* pointer[100]) {
     }
 
 
-    // MANCA PARTE DI DELETE
+    // Parte di deallocazione
+    // Devo deallocare solamente una volta, considerando che
+    // può essere che io abbia piu puntatori che puntano alla stessa zona di memoria
+    for (int j = 0; j < i; j++) {
+
+        bool deallocated = false;
+
+        for (int k = 0; k < i; k++) {
+
+            if (pointer[i] == pointer[j] && !deallocated) {
+                deallocated = true;
+                delete pointer[k];
+            }
+        }
+
+    }
 }
 
 
@@ -69,6 +84,8 @@ int main() {
 
 
     f(pointer);
+
+    // cout << pointer[2];
 
 
     return 0;

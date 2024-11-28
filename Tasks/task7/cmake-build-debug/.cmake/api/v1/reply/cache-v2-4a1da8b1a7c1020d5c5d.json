@@ -171,7 +171,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "-fsanitize=address -g"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_DEBUG",
