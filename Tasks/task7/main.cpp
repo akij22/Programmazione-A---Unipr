@@ -9,9 +9,11 @@ void f (int* pointer[100]) {
     int i = 0, countNewVariables = 0;
 
     do {
+
+        // Resetto found per iterare su un nuovo elemento ancora non analizzato
+        found = false;
         cout << "Inserire un numero: ";
         cin >> choice;
-
         cin.ignore();
         status = cin.fail();
         if (status) {
@@ -21,7 +23,7 @@ void f (int* pointer[100]) {
         } else if (choice != -1) {
 
             for (int j = 0; j < i; j++) {
-                if (*pointer[j] == choice) {
+                if (*pointer[j] == choice && found == false) {
                     cout << "Variabile già presente!" << endl;
                     found = true;
                     index = j;
@@ -37,7 +39,12 @@ void f (int* pointer[100]) {
                 // La variabile non esiste, quindi la creo per la prima volta
                 int* v = new int;
                 *v = choice;
+
+                // Debug: stampo cosa contiene v (indirizzo di memoria della variabile allocata nello heap)
+                // e il suo relativo valore
+                cout << v << " " << *v << endl;
                 pointer[i] = v;
+
                 countNewVariables++;
             }
             i++;
@@ -47,7 +54,7 @@ void f (int* pointer[100]) {
 
     cout << "Allocate " << countNewVariables << " variabili" << endl;
     for (int j = 0; j < i; j++) {
-        cout << "Indirizzo di memoria: " << pointer[j] << ", valore: " << *pointer[j] << endl;
+        cout << "Indirizzo di memoria della variabile nello heap: " << pointer[j] << ", valore: " << *pointer[j] << endl;
     }
 
 }
@@ -59,7 +66,9 @@ int main() {
     int* pointer[1000];
 
 
+
     f(pointer);
+
 
     return 0;
 }
