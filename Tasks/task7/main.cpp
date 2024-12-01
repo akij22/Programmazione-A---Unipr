@@ -58,19 +58,18 @@ void f (int* pointer[1000]) {
     }
 
 
-    // Parte di deallocazione
-    // Devo deallocare solamente una volta, considerando che
-    // può essere che io abbia piu puntatori che puntano alla stessa zona di memoria
-
-
-
      bool deallocated = false;
+
+    // Array per memorizzare gli indici dei puntatori già deallocati
+    // (per evitare double-free)
     int indiciToDelete[100];
 
+    // Indice di supporto
     int h = 0;
+
     for (int j = 0; j < i; j++) {
         deallocated = false;
-        for (int k = 0; k < j; k++) {
+        for (int k = 0; k <= j; k++) {
 
             // pointer[j] = puntatore attuale che sto confrontando
             // con tutti gli altri
@@ -83,15 +82,29 @@ void f (int* pointer[1000]) {
             }
 
 
+
         }
     }
 
 
-    for (int j = 0; j < h; j++) {
-        cout << indiciToDelete[j] << " ";
-        if (j != indiciToDelete[j])
-            delete pointer[indiciToDelete[j]];
+
+    bool notDeallocate = false;
+    // int y = 0;
+    // Parte di deallocazione
+    for (int j = 0; j < i; j++) {
+        // cout <<  indiciToDelete[j] << " " << endl;
+
+        for (int k = 0; k < h; k++){
+            if (j == indiciToDelete[k])
+                notDeallocate = true;
+        }
+        if (!notDeallocate) {
+            cout << "Dealloco puntatore " << *pointer[j] << " in posizione " << j << endl;
+            delete pointer[j];
+        }
+
     }
+
 
 
 

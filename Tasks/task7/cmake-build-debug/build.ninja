@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_task7: phony || .
 
 build CMakeFiles/task7.dir/main.cpp.o: CXX_COMPILER__task7_unscanned_Debug /Users/achillerossi/Documents/UNIPR/C++/Programmazione$ A/Tasks/task7/main.cpp || cmake_object_order_depends_target_task7
   DEP_FILE = CMakeFiles/task7.dir/main.cpp.o.d
-  FLAGS = -fsanitize=address -g -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/task7.dir
   OBJECT_FILE_DIR = CMakeFiles/task7.dir
   TARGET_COMPILE_PDB = CMakeFiles/task7.dir/
@@ -66,7 +66,7 @@ build CMakeFiles/task7.dir/main.cpp.o: CXX_COMPILER__task7_unscanned_Debug /User
 # Link the executable task7
 
 build task7: CXX_EXECUTABLE_LINKER__task7_Debug CMakeFiles/task7.dir/main.cpp.o
-  FLAGS = -fsanitize=address -g -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk
   OBJECT_DIR = CMakeFiles/task7.dir
   POST_BUILD = :
   PRE_LINK = :
