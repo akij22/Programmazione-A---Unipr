@@ -92,6 +92,7 @@ void f (int* pointer[1000]) {
     // int y = 0;
     // Parte di deallocazione
     for (int j = 0; j < i; j++) {
+        notDeallocate = false;
         // cout <<  indiciToDelete[j] << " " << endl;
 
         for (int k = 0; k < h; k++){
