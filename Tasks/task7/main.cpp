@@ -2,6 +2,7 @@
 using namespace std;
 
 // Funzione
+// DA SPOSTARE NEL MAIN
 void f (int* pointer[1000]) {
     int choice, index = 0;
     bool status;
@@ -37,11 +38,16 @@ void f (int* pointer[1000]) {
             } else {
 
                 // La variabile non esiste, quindi la creo per la prima volta
+
+                // DA RIMUOVERE
+                cout << "Variabile non presente, quindi la alloco dinamicamente..." << endl;
                 int* v = new int;
                 *v = choice;
 
                 // Debug: stampo cosa contiene v (indirizzo di memoria della variabile allocata nello heap)
                 // e il suo relativo valore
+
+                // DA RIMUOVERE
                 cout << v << " " << *v << endl;
                 pointer[i] = v;
 
@@ -54,10 +60,14 @@ void f (int* pointer[1000]) {
 
     cout << "Allocate " << countNewVariables << " variabili" << endl;
     for (int j = 0; j < i; j++) {
+
+        // DA RIMUOVERE
         cout << "Indirizzo di memoria della variabile nello heap: " << pointer[j] << ", valore: " << *pointer[j] << endl;
     }
 
 
+
+    // PARTE DI DEALLOCAZIONE
      bool deallocated = false;
 
     // Array per memorizzare gli indici dei puntatori già deallocati
@@ -105,8 +115,6 @@ void f (int* pointer[1000]) {
         }
 
     }
-
-
 
 
 }
