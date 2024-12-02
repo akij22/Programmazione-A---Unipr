@@ -1,9 +1,10 @@
 #include <iostream>
 using namespace std;
 
-// Funzione
-// DA SPOSTARE NEL MAIN
-void f (int* pointer[1000]) {
+int main() {
+
+    int* pointer[1000];
+
     int choice, index = 0;
     bool status;
     bool found = false;
@@ -117,16 +118,7 @@ void f (int* pointer[1000]) {
     }
 
 
-}
 
-
-int main() {
-
-    int* pointer[1000];
-
-
-
-    f(pointer);
 
 
 
