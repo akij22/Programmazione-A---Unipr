@@ -37,6 +37,7 @@ void printIt(node* list) {
             list = list->next;
         }
     }
+    cout << endl;
 }
 
 node* findSuccession(node* list) {
@@ -69,22 +70,38 @@ node* findSuccession(node* list) {
     return firstNode;
 }
 
+
+void deleteEntireListIt(node* list) {
+
+    while (list != nullptr) {
+        node* temp = list;
+        list = list->next;
+        delete temp;
+    }
+}
+
+
 int main() {
 
     node* list = nullptr;
 
-    aggiungiInTesta(list, 4);
-    aggiungiInTesta(list, 3);
+    aggiungiInTesta(list, 55);
+    aggiungiInTesta(list, 10);
     aggiungiInTesta(list, 2);
     aggiungiInTesta(list, 1);
     aggiungiInTesta(list, 7);
+
     // aggiungiInCoda(list, 1);
 
     printIt(list);
-    cout << endl;
+
     node* finalList = findSuccession(list);
 
     printIt(finalList);
+
+    printIt(list);
+
+    deleteEntireListIt(list);
 
     return 0;
 }
