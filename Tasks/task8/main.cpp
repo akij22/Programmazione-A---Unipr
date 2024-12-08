@@ -62,8 +62,6 @@ node* findSuccession(node* list) {
     }
 
 
-    //cout << count << endl;
-
     firstNode != nullptr ? cout << "Nodo di partenza della successione: " << firstNode->data << endl : cout << "Il nodo e' null!" << endl;
     (check) ? cout << "La successione e' valida!" << endl : cout << "La successione non e' valida..." << endl;
 
@@ -101,6 +99,7 @@ int main() {
 
     printIt(list);
 
+    // Deallocazione della lista
     deleteEntireListIt(list);
 
     return 0;
