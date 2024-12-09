@@ -45,25 +45,19 @@ node* findSuccession(node* list) {
     node* firstNode = nullptr;
 
     int count = 0;
-    bool check = false;
 
     while (list->next != nullptr) {
-        // cout << list->next->data << "VS" << list->data << endl;
+
         if (list->next->data > list->data) {
-            check = true;
             if (count == 0)
                 firstNode = list;
             count++;
         } else {
-            check = false;
             firstNode = nullptr;
+            count = 0;
         }
         list = list->next;
     }
-
-
-    firstNode != nullptr ? cout << "Nodo di partenza della successione: " << firstNode->data << endl : cout << "Il nodo e' null!" << endl;
-    (check) ? cout << "La successione e' valida!" << endl : cout << "La successione non e' valida..." << endl;
 
     return firstNode;
 }
@@ -83,20 +77,20 @@ int main() {
 
     node* list = nullptr;
 
+
     aggiungiInTesta(list, 55);
     aggiungiInTesta(list, 10);
     aggiungiInTesta(list, 2);
     aggiungiInTesta(list, 1);
     aggiungiInTesta(list, 7);
 
-    // aggiungiInCoda(list, 1);
-
-    printIt(list);
 
     node* finalList = findSuccession(list);
 
+    cout << "Stampa della lista trovata come successione:" << endl;
     printIt(finalList);
 
+    cout << "Stampa della lista originale:" << endl;
     printIt(list);
 
     // Deallocazione della lista
