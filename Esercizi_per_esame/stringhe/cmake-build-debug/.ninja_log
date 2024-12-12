@@ -1,0 +1,6 @@
+# ninja log v6
+2	69	1734032229342431901	build.ninja	f59f3bc9991d1d97
+1	531	1733817817118274447	CMakeFiles/sottostringhe_comuni.dir/main.cpp.o	761b91759f1b9890
+476	574	1733819508221440654	sottostringhe_comuni	307f48e52d763d7a
+1	366	1734032238629062049	CMakeFiles/sottostringhe_comuni.dir/main.cpp.o	bc4114a21fd9490
+368	464	1734032238996508028	sottostringhe_comuni	a1903430507c5232
