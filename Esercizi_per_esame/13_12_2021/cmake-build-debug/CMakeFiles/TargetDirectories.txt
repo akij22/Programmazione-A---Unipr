@@ -1,0 +1,3 @@
+/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/13_12_2021/cmake-build-debug/CMakeFiles/array.dir
+/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/13_12_2021/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/13_12_2021/cmake-build-debug/CMakeFiles/rebuild_cache.dir

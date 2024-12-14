@@ -54,6 +54,19 @@ void deleteByChar (char* string, char c) {
 }
 
 
+char* reduceConsecutives (char* string) {
+
+    if (string == '\0') {
+        cout << "Stringa vuota!" << endl;
+        return string;
+    }
+
+
+}
+
+
+
+
 
 
 int main() {
