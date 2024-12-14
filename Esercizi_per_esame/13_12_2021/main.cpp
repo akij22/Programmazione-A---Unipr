@@ -115,6 +115,14 @@ void concat (node* list1, node* list2, node* &newList) {
 }
 
 
+int getLen(char* str) {
+    int count = 0;
+    for (int i = 0; str[i] != '\0'; i++)
+        count++;
+    return count;
+}
+
+
 
 
 
@@ -149,6 +157,34 @@ int main() {
 
     cout << "Lista concatenata: ";
     printList(finalList);
+    cout << endl;
+
+
+    cout << "OUTPUT TERZO ESERCIZIO" << endl;
+
+    char str[31];
+
+    do {
+    cout << "Inserire stringa: ";
+    cin.getline(str, 30, '\n');
+    if (cin.fail())
+        cout << "Errore nell'inserimento!" << endl;
+    } while (cin.fail());
+
+
+    int j = 0;
+    int checkPalindrome = 0;
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == str[getLen(str) - 1 - j])
+            checkPalindrome++;
+        j++;
+
+    }
+    if (checkPalindrome == getLen(str))
+        cout << "La stringa e' palindrome!" << endl;
+    // cout << checkPalindrome << endl;
+
+
 
 
     return 0;
