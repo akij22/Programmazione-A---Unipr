@@ -53,15 +53,40 @@ void deleteByChar (char* string, char c) {
         cout << "Carattere non presente nella stringa..." << endl;
 }
 
+int getLen(char* str) {
+    if (str[0] == '\0')
+        return 0;
 
-char* reduceConsecutives (char* string) {
+    int count = 0;
 
-    if (string == '\0') {
-        cout << "Stringa vuota!" << endl;
-        return string;
+    for (int i = 0; str[i] != '\0'; i++)
+        count++;
+
+    return count;
+}
+
+char* replace_spaces(char* str) {
+
+    char* newS = new char[getLen(str)];
+
+    if (str[0] == '\0') {
+        cout << "Stringa vuota" << endl;
+        return newS;
     }
 
 
+    strcpy(newS, str);
+
+    newS[getLen(str)] = '\0';
+
+    for (int i = 0; newS[i] != '\0'; i++) {
+
+        if (newS[i] == ' ') {
+            newS[i] = '_';
+        }
+    }
+
+    return newS;
 }
 
 
@@ -97,6 +122,15 @@ int main() {
     cin >> toDelete;
 
     deleteByChar(str3, toDelete);
+
+
+    char string[49] = {'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!', '\0'};
+
+    char* newS = replace_spaces(string);
+
+    cout << newS << endl;
+
+    delete newS;
 
 
 

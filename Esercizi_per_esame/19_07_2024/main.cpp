@@ -1,5 +1,4 @@
 #include <iostream>
-#include <list>
 using namespace  std;
 
 
@@ -111,12 +110,14 @@ void removeDuplicates (node* &list) {
         return;
 
     node* cursor2 = list;
-
+    node* cursor = nullptr;
     while (cursor2 != nullptr) {
         int currentDato = cursor2->dato;
         int check = 0;
 
-        node* cursor = list;
+        // Resetto il secondo puntatore
+        // Ad ogni conclusione di ciclo for riparto dalla testa
+        cursor = list;
 
         for (int i = 0; i < getLenList(list); i++) {
             bool found = false;
@@ -138,6 +139,33 @@ void removeDuplicates (node* &list) {
 
     }
 }
+
+
+char* remove_double(char* str) {
+    char* newS = new char[getLen(str)];
+
+    newS[getLen(str)] = '\0';
+
+    bool found = false;
+    bool removed = false;
+
+    strcpy(newS, str);
+
+    for (int i = 0; newS[i] != '\0'; i++) {
+        for (int j = 0; newS[j] != '\0'; j++){
+            if (newS[i] == newS[j] && found == true) {
+                for (int k = j; newS[k] != '\0'; k++)
+                    newS[k] = newS[k+1];
+            } else if (newS[i] == newS[j] && found == false) {
+                found = true;
+            }
+        }
+        found = false;
+    }
+
+    return newS;
+}
+
 
 
 int main() {
@@ -171,6 +199,17 @@ int main() {
 
     removeDuplicates(list1);
     printList(list1);
+
+
+    // Da fare parte di inserimento chiesta all'utente, ciò e' stato
+    // fatto per velocizzare la fase di test
+    char string[100] = {'a', 'a', 'b', 'b', 'b', 'c', 'c', 'c'};
+
+    char* newS = remove_double(string);
+
+    cout << newS << endl;
+
+    delete newS;
 
     return 0;
 }
