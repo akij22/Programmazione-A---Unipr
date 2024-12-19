@@ -156,11 +156,46 @@ void deleteEntireList (node* &list1) {
 }
 
 
+void concat (node* list1, node* list2) {
+    if (list1 == nullptr && list2 == nullptr)
+        return;
+
+    while (list2 != nullptr) {
+        addOnTail(list1, list2->data);
+        list2 = list2->next;
+    }
+}
+
+bool isDescending (node* list) {
+    bool check = true;
+
+    if (list == nullptr)
+        return false;
+
+    while (list->next != nullptr) {
+        if (list->data > list->next->data && check == true)
+            check = true;
+        else
+            check = false;
+
+        list = list->next;
+    }
+
+    return check;
+}
+
 int main() {
 
 
     node* list1 = nullptr;
     node* list2 = nullptr;
+
+    node* list3 = nullptr;
+
+    addOnTail(list3, 12);
+    addOnTail(list3, 3);
+    addOnTail(list3, -5);
+    addOnTail(list3, -7);
 
     addOnTail(list1, 10);
     addOnTail(list1, 20);
@@ -186,9 +221,19 @@ int main() {
 
 
 
+    concat(list1, list2);
+    printList(list1);
+
+    bool desc = isDescending(list3);
+
+    cout << endl;
+    cout << desc << endl;
+
+
     // Deallocazione delle liste
     deleteEntireList(list1);
     deleteEntireList(list2);
+    deleteEntireList(list3);
 
 
     return 0;
