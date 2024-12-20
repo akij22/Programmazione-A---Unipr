@@ -184,6 +184,17 @@ bool isDescending (node* list) {
     return check;
 }
 
+bool equals(node* list1, node* list2) {
+    if (list1 == nullptr && list2 == nullptr) {
+        return true;
+    }
+
+    if (list1->data != list2->data)
+        return false;
+
+    return equals(list1->next, list2->next);
+}
+
 int main() {
 
 
@@ -191,6 +202,7 @@ int main() {
     node* list2 = nullptr;
 
     node* list3 = nullptr;
+    node* list4 = nullptr;
 
     addOnTail(list3, 12);
     addOnTail(list3, 3);
@@ -207,6 +219,10 @@ int main() {
     addOnTail(list2, 4);
     addOnTail(list2, 6);
 
+    addOnTail(list4, 2);
+    addOnTail(list4, 4);
+    addOnTail(list4, 6);
+
     printList(list1);
     printList(list2);
 
@@ -222,12 +238,18 @@ int main() {
 
 
     concat(list1, list2);
+    cout << "Lista 1: ";
     printList(list1);
+
+    cout << "Lista 2: ";
+    printList(list2);
 
     bool desc = isDescending(list3);
 
     cout << endl;
     cout << desc << endl;
+
+    cout << equals(list2, list4);
 
 
     // Deallocazione delle liste
