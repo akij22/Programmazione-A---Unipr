@@ -2,6 +2,42 @@
 	"entries" : 
 	[
 		{
+			"name" : "28_06_2024_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/28_06_2024/cmake-build-debug"
+		},
+		{
+			"name" : "28_06_2024_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "28_06_2024_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/28_06_2024"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -55,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/13_12_2021/cmake-build-debug"
+			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/28_06_2024/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +515,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/13_12_2021/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/28_06_2024/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +575,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/13_12_2021"
+			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/28_06_2024"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -771,7 +807,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -819,7 +855,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "array"
+			"value" : "28_06_2024"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1116,42 +1152,6 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
-		},
-		{
-			"name" : "array_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/13_12_2021/cmake-build-debug"
-		},
-		{
-			"name" : "array_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "array_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/13_12_2021"
 		}
 	],
 	"kind" : "cache",

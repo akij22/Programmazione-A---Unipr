@@ -114,6 +114,14 @@ void concat (node* list1, node* list2, node* &newList) {
     }
 }
 
+void concatRec (node* list1, node* list2) {
+    if (list2 == nullptr)
+        return;
+
+    addOnTail(list1, list2->data);
+    return concatRec(list1, list2->next);
+}
+
 
 int getLen(char* str) {
     int count = 0;
@@ -140,6 +148,19 @@ int main() {
 
     node* list1 = nullptr;
     node* list2 = nullptr;
+    node* list3 = nullptr;
+    node*list4 = nullptr;
+
+    addOnTail(list3, 1);
+    addOnTail(list3, 2);
+
+    addOnTail(list4, 3);
+    addOnTail(list4, 4);
+
+    concatRec(list3, list4);
+
+    cout << "Lista: ";
+    printList(list3);
 
     addOnTail(list1, 10);
     addOnTail(list2, 20);

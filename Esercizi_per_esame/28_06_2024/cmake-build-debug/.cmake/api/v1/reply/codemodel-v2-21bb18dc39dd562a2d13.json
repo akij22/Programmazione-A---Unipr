@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "28_06_2024",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "28_06_2024::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-28_06_2024-Debug-c79af2cd2aab4413df07.json",
+					"name" : "28_06_2024",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/28_06_2024/cmake-build-debug",
+		"source" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Esercizi_per_esame/28_06_2024"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

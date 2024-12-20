@@ -26,6 +26,12 @@ int compact (int a[], int n, int b[]) {
     return count;
 }
 
+void printArray (int a[], int n) {
+    for (int i = 0; i < n; i++)
+        cout << a[i] << " ";
+    cout << endl;
+}
+
 
 int main() {
 
@@ -35,6 +41,8 @@ int main() {
     int result = compact(a, 5, b);
 
     cout << result << endl;
+
+    printArray(b, result);
 
     delete [] b;
     return 0;

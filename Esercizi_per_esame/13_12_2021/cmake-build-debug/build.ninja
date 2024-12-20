@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_array: phony || .
 
 build CMakeFiles/array.dir/main.cpp.o: CXX_COMPILER__array_unscanned_Debug /Users/achillerossi/Documents/UNIPR/C++/Programmazione$ A/Esercizi_per_esame/13_12_2021/main.cpp || cmake_object_order_depends_target_array
   DEP_FILE = CMakeFiles/array.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/array.dir
   OBJECT_FILE_DIR = CMakeFiles/array.dir
   TARGET_COMPILE_PDB = CMakeFiles/array.dir/
@@ -66,7 +66,7 @@ build CMakeFiles/array.dir/main.cpp.o: CXX_COMPILER__array_unscanned_Debug /User
 # Link the executable array
 
 build array: CXX_EXECUTABLE_LINKER__array_Debug CMakeFiles/array.dir/main.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/array.dir
   POST_BUILD = :
   PRE_LINK = :
