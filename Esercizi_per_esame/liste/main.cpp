@@ -195,7 +195,7 @@ bool equals(node* list1, node* list2) {
     return equals(list1->next, list2->next);
 }
 
-
+// Rotazione della lista di un elemento
 void rotate_back(node* &list) {
     if (list == nullptr)
         return;
