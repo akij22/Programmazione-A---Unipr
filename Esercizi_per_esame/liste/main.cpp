@@ -195,6 +195,22 @@ bool equals(node* list1, node* list2) {
     return equals(list1->next, list2->next);
 }
 
+
+void rotate_back(node* &list) {
+    if (list == nullptr)
+        return;
+
+    node* newList = list->next;
+    node* cursor = list;
+
+    while (cursor->next != nullptr)
+        cursor = cursor->next;
+
+    cursor->next = list;
+    list->next = nullptr;
+    list = newList;
+}
+
 int main() {
 
 
@@ -203,6 +219,7 @@ int main() {
 
     node* list3 = nullptr;
     node* list4 = nullptr;
+    node* list5 = nullptr;
 
     addOnTail(list3, 12);
     addOnTail(list3, 3);
@@ -222,6 +239,12 @@ int main() {
     addOnTail(list4, 2);
     addOnTail(list4, 4);
     addOnTail(list4, 6);
+
+    addOnTail(list5, 1);
+    addOnTail(list5, 2);
+    addOnTail(list5, 3);
+    addOnTail(list5, 4);
+    addOnTail(list5, 5);
 
     printList(list1);
     printList(list2);
@@ -256,6 +279,10 @@ int main() {
     deleteEntireList(list1);
     deleteEntireList(list2);
     deleteEntireList(list3);
+
+    rotate_back(list5);
+    cout << endl << "Lista 5:" << endl;
+    printList(list5);
 
 
     return 0;
