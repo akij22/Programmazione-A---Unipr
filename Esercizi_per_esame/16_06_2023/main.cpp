@@ -1,29 +1,40 @@
 #include <iostream>
 using namespace std;
 
-/*
-Scrivere una funzione noVowels che, preso come parametro una stringa C-style str ritorna una nuova stringa
-ottenuta eliminando tutte le vocali contenute in str.
-Scrivere una funzione main che legge da tastiera una stringa di massimo 50 caratteri, chiama la funzione noVowels
-passando come parametro la stringa letta ed infine stampa il risultato ritornato dalla chiamata alla funzione
-noVowels. Nel caso in cui la lunghezza della stringa inserita dall’utente sia maggiore di 50 caratteri, la funzione
-main deve ritornare -1.
-*/
 
 
-char* noVowels(char string []) {
-    for (int i = 0; string[i] != '\0'; i++) {
-        if (string[i] == 'a' || string[i] == 'e' || string[i] == 'i' || string[i] == 'o' || string[i] == 'u') {
+int getDim(char* str) {
+    int count = 0;
+    for (int i = 0; str[i] != '\0'; i++)
+        count++;
 
+    return count;
+}
 
-        } else if (string[i] == 'A' || string[i] == 'E' || string[i] == 'I' || string[i] == 'O' || string[i] == 'U') {
+char* noVowels(char* str) {
 
+    char* newS = new char[getDim(str) + 1];
 
+    if (str[0] == '\0')
+        return newS;
+
+    strcpy(newS, str);
+    newS[getDim(str) + 1] = '\0';
+
+    for (int i = 0; newS[i] != '\0'; i++) {
+        if (newS[i] == 'a' || newS[i] == 'e' || newS[i] == 'i' || newS[i] == 'o' || newS[i] == 'u'
+        || newS[i] == 'A' || newS[i] == 'E' || newS[i] == 'I' || newS[i] == 'O' || newS[i] == 'U') {
+
+            for (int j = i; newS[j] != '\0'; j++)
+                newS[j] = newS[j + 1];
+
+            i = 0;
         }
+
     }
 
 
-    return string;
+    return newS;
 }
 
 int main() {

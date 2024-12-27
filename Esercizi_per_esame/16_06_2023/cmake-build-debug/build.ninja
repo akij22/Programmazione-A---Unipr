@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_16_06_2023: phony || .
 
 build CMakeFiles/16_06_2023.dir/main.cpp.o: CXX_COMPILER__16_06_2023_unscanned_Debug /Users/achillerossi/Documents/UNIPR/C++/Programmazione$ A/Esercizi_per_esame/16_06_2023/main.cpp || cmake_object_order_depends_target_16_06_2023
   DEP_FILE = CMakeFiles/16_06_2023.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/16_06_2023.dir
   OBJECT_FILE_DIR = CMakeFiles/16_06_2023.dir
   TARGET_COMPILE_PDB = CMakeFiles/16_06_2023.dir/
@@ -66,7 +66,7 @@ build CMakeFiles/16_06_2023.dir/main.cpp.o: CXX_COMPILER__16_06_2023_unscanned_D
 # Link the executable 16_06_2023
 
 build 16_06_2023: CXX_EXECUTABLE_LINKER__16_06_2023_Debug CMakeFiles/16_06_2023.dir/main.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/16_06_2023.dir
   POST_BUILD = :
   PRE_LINK = :
