@@ -211,6 +211,48 @@ void rotate_back(node* &list) {
     list = newList;
 }
 
+
+void rotate_back_n_times(node* &list, int n) {
+    if (list == nullptr)
+        return;
+
+    for (int i = 0; i < n; i++) {
+        node* newList = list->next;
+        node* cursor = list;
+
+        while (cursor->next != nullptr)
+            cursor = cursor->next;
+
+        cursor->next = list;
+        list->next = nullptr;
+        list = newList;
+    }
+}
+
+
+void bubbleSort(node* head) {
+    if (head == nullptr || head->next == nullptr)
+        return;
+
+
+    bool swapped;
+    do {
+        swapped = false;
+        node* cursor = head;
+
+        while (cursor->next != nullptr) {
+            if (cursor->data > cursor->next->data) {
+
+                int temp = cursor->data;
+                cursor->data = cursor->next->data;
+                cursor->next->data = temp;
+                swapped = true;
+            }
+            cursor = cursor->next;
+        }
+    } while (swapped);
+}
+
 int main() {
 
 
@@ -220,6 +262,8 @@ int main() {
     node* list3 = nullptr;
     node* list4 = nullptr;
     node* list5 = nullptr;
+    node* list6 = nullptr;
+    node* list7 = nullptr;
 
     addOnTail(list3, 12);
     addOnTail(list3, 3);
@@ -245,6 +289,18 @@ int main() {
     addOnTail(list5, 3);
     addOnTail(list5, 4);
     addOnTail(list5, 5);
+
+    addOnTail(list6, 1);
+    addOnTail(list6, 2);
+    addOnTail(list6, 3);
+    addOnTail(list6, 4);
+    addOnTail(list6, 5);
+
+    addOnTail(list7, 5);
+    addOnTail(list7, 4);
+    addOnTail(list7, 3);
+    addOnTail(list7, 2);
+    addOnTail(list7, 1);
 
     printList(list1);
     printList(list2);
@@ -283,6 +339,19 @@ int main() {
     rotate_back(list5);
     cout << endl << "Lista 5:" << endl;
     printList(list5);
+
+
+    rotate_back_n_times(list6, 2);
+    cout << endl << "Lista 6:" << endl;
+    printList(list6);
+
+
+    bubbleSort(list7);
+
+    cout << "LISTA 7" << endl;
+    printList(list7);
+
+
 
 
     return 0;
