@@ -230,15 +230,15 @@ void rotate_back_n_times(node* &list, int n) {
 }
 
 
-void bubbleSort(node* head) {
-    if (head == nullptr || head->next == nullptr)
+void bubbleSort(node* list) {
+    if (list == nullptr || list->next == nullptr)
         return;
 
 
     bool swapped;
     do {
         swapped = false;
-        node* cursor = head;
+        node* cursor = list;
 
         while (cursor->next != nullptr) {
             if (cursor->data > cursor->next->data) {
@@ -252,6 +252,34 @@ void bubbleSort(node* head) {
         }
     } while (swapped);
 }
+
+void insertNodeByIndice (node* &list, int value, int indice) {
+    node* cursor = list;
+    if (list == nullptr)
+        return;
+
+    int i = 0;
+    while (i != indice) {
+        cursor = cursor->next;
+        i++;
+    }
+
+    node* newNode = new node;
+    newNode->data = value;
+    node* next = cursor->next;
+    cursor->next = newNode;
+    newNode->next = next;
+}
+
+void removeHead(node* &list) {
+    if (list == nullptr)
+        return;
+
+    node* toDelete = list;
+    list = list->next;
+    delete toDelete;
+}
+
 
 int main() {
 
@@ -349,6 +377,13 @@ int main() {
     bubbleSort(list7);
 
     cout << "LISTA 7" << endl;
+    printList(list7);
+
+    insertNodeByIndice(list7, 99, 2);
+
+    printList(list7);
+
+    removeHead(list7);
     printList(list7);
 
 
