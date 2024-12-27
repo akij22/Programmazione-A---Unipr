@@ -90,6 +90,27 @@ char* replace_spaces(char* str) {
 }
 
 
+int countTotal(char c, char* str) {
+    int count = 0;
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == c)
+            count++;
+    }
+    return count;
+}
+
+int countUnique(char* str) {
+    if (str[0] == '\0')
+        return 0;
+
+    int counter = 0;
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (countTotal(str[i], str) == 1)
+            counter++;
+    }
+    return counter;
+}
 
 
 
@@ -99,6 +120,7 @@ int main() {
     // Lunghezza max della stringa = 100
     char str1[101], str2[101], str3[51];
 
+    char str[101] = {'h', 'e', 'l', 'l', 'o', '\0'};
 
     cout << "Inserire la prima parola: ";
     cin.getline(str1, 100);
@@ -131,6 +153,11 @@ int main() {
     cout << newS << endl;
 
     delete newS;
+
+
+    cout << endl;
+
+    cout << "Numero di caratteri unici: " << countUnique(str) << endl;
 
 
 
