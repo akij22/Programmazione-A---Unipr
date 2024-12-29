@@ -87,12 +87,24 @@ int nSottoSequenze(int a[], int n, int k) {
     return totalCount;
 }
 
+void reverseArray(int a[], int n) {
+    int j = n - 1;
+    for (int i = 0; i < n / 2; i++) {
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+        j--;
+    }
+
+}
+
 int main() {
 
     int a[5] = {1, 2, 7, 1, 7};
     int a2[5] = {5, 4, 3, 2, 1};
     int a3[6] = {2, 3, -2, 1, -2, 5};
     int a4[7] = {1, 2, -3, 7, -1, 4, 3};
+    int a5[6] = {1, 2, 3, 4, 5, 6};
 
 
     int* b = new int[5];
@@ -114,6 +126,10 @@ int main() {
     delete [] b;
 
     cout << endl;
-    cout << nSottoSequenze(a4, 7, 3) << endl;;
+    cout << nSottoSequenze(a4, 7, 3) << endl;
+
+    reverseArray(a5, 6);
+
+    printArray(a5, 6);
     return 0;
 }
