@@ -66,11 +66,35 @@ int getZeroSubSequence(int a[], int n) {
     return count;
 }
 
+int nSottoSequenze(int a[], int n, int k) {
+    int totalCount = 0;
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = i; j < n; j++) {
+            sum = 0;
+
+            for (int k2 = i; k2 <= j; k2++) {
+                sum = sum + a[k2];
+            }
+
+            if (sum == k) {
+                totalCount++;
+                cout << "trovata sotto sequenza iterazione " << i << j << endl;
+            }
+        }
+    }
+
+    return totalCount;
+}
+
 int main() {
 
     int a[5] = {1, 2, 7, 1, 7};
     int a2[5] = {5, 4, 3, 2, 1};
     int a3[6] = {2, 3, -2, 1, -2, 5};
+    int a4[7] = {1, 2, -3, 7, -1, 4, 3};
+
+
     int* b = new int[5];
 
     int result = compact(a, 5, b);
@@ -88,5 +112,8 @@ int main() {
     cout << "Trovata " <<getZeroSubSequence(a3, 6) << " sottosequenza" << endl;
 
     delete [] b;
+
+    cout << endl;
+    cout << nSottoSequenze(a4, 7, 3) << endl;;
     return 0;
 }

@@ -26,6 +26,7 @@ bool findSubString (char* s1, char* s2) {
 }
 
 
+
 /*
  * Scrivere un programma in C++ che legge una stringa str e un carattere c
  * e stampa a video una nuova stringa che corrisponde a str con tutte le occorrenze del carattere c rimosse.
@@ -63,6 +64,18 @@ int getLen(char* str) {
         count++;
 
     return count;
+}
+
+char* reverseNew(char* str) {
+    char* newS = new char[getLen(str) + 1];
+
+    int j = getLen(str) - 1;
+
+    for (int i = 0; i < getLen(str); i++) {
+        newS[i] = str[j];
+        j--;
+    }
+    return newS;
 }
 
 char* replace_spaces(char* str) {
@@ -119,6 +132,15 @@ int main() {
 
     // Lunghezza max della stringa = 100
     char str1[101], str2[101], str3[51];
+
+    char str4[5] = {'c', 'i', 'a', 'o', '\0'};
+
+    char* newS2 = reverseNew(str4);
+
+    // char c = newS2[4];
+
+    cout << endl << endl << newS2 << endl << endl;
+    delete[] newS2;
 
     char str[101] = {'h', 'e', 'l', 'l', 'o', '\0'};
 
