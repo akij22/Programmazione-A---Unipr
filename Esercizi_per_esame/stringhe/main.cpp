@@ -249,7 +249,7 @@ int main() {
     printSubString(string2, 4);
     cout << endl;
 
-    cout << findSottostringa(string2, sub) << endl;;
+    cout << findSottostringa(string2, sub) << endl;
 
 
 

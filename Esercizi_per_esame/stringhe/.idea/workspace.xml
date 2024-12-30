@@ -30,56 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11a9dbb1-3c4e-4231-b8a9-2c4b4ac3c98e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-75b57377dd2f36d75a1b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/.cmake/api/v1/reply/index-2024-12-17T13-40-25-0262.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/19_07_2024" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/19_07_2024" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/CMakeFiles/19_07_2024.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/CMakeFiles/19_07_2024.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../19_07_2024/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../array/1/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../array/1/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../array/1/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../array/1/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../array/1/cmake-build-debug/1" beforeDir="false" afterPath="$PROJECT_DIR$/../array/1/cmake-build-debug/1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../array/1/cmake-build-debug/CMakeFiles/1.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../array/1/cmake-build-debug/CMakeFiles/1.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../array/1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../array/1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../array/1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../array/1/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sottostringhe_comuni.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sottostringhe_comuni.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sottostringhe_comuni" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sottostringhe_comuni" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/.cmake/api/v1/reply/cache-v2-5c0634090982fd76f6ee.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-671f465a76a5cd6f3a42.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-ec44fa5bbbf9143df4d9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/.cmake/api/v1/reply/index-2024-11-13T12-08-43-0382.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/.cmake/api/v1/reply/target-task5-Debug-612eb72bf5514c616965.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-17cb755997f43c261180.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/3.29.6/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/3.29.6/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/3.29.6/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/task5.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/CMakeFiles/task5.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/task5" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tasks/task5/cmake-build-debug/task5" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +131,7 @@
       <workItem from="1735310406468" duration="1214000" />
       <workItem from="1735479541718" duration="567000" />
       <workItem from="1735553667107" duration="953000" />
-      <workItem from="1735555765034" duration="1396000" />
+      <workItem from="1735555765034" duration="1823000" />
     </task>
     <servers />
   </component>

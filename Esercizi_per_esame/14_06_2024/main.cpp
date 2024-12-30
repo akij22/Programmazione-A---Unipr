@@ -116,7 +116,8 @@ void rotate_back(node* &list) {
         cursor2 = cursor2->next;
 
     cursor2->next = list;
-    cursor3->next = nullptr;
+    list->next = nullptr;
+    //cursor3->next = nullptr;
 
     list = cursor1;
 

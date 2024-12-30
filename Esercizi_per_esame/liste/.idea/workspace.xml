@@ -30,17 +30,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ffdac41-0025-4c32-a319-1f58383285e7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../array/1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../array/1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stringhe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stringhe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stringhe/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../stringhe/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stringhe/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../stringhe/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stringhe/cmake-build-debug/CMakeFiles/sottostringhe_comuni.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../stringhe/cmake-build-debug/CMakeFiles/sottostringhe_comuni.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stringhe/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../stringhe/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stringhe/cmake-build-debug/sottostringhe_comuni" beforeDir="false" afterPath="$PROJECT_DIR$/../stringhe/cmake-build-debug/sottostringhe_comuni" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stringhe/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../stringhe/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +162,7 @@
       <workItem from="1735297415647" duration="922000" />
       <workItem from="1735299206016" duration="3257000" />
       <workItem from="1735480522194" duration="140000" />
+      <workItem from="1735557769177" duration="594000" />
     </task>
     <servers />
   </component>
