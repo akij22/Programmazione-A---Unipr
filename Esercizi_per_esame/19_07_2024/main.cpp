@@ -166,6 +166,26 @@ char* remove_double(char* str) {
     return newS;
 }
 
+void removeDuplicatesInPlace(char* &str) {
+
+    if (str[0] == '\0')
+        return;
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        bool found = false;
+        for (int j = 0; str[j] != '\0'; j++) {
+            if (str[i] == str[j] && found) {
+                for (int k = j; str[k] != '\0'; k++)
+                    str[k] = str[k+1];
+                j = 0;
+                found = false;
+
+            } else if (str[i] == str[j] && !found)
+                found = true;
+        }
+    }
+}
+
 
 
 int main() {
@@ -210,6 +230,17 @@ int main() {
     cout << newS << endl;
 
     delete newS;
+
+
+    char* newS2 = new char[100];
+    strcpy(newS2, string);
+
+    removeDuplicatesInPlace(newS2);
+
+
+    cout << newS2 << endl;
+    delete [] newS2;
+
 
     return 0;
 }

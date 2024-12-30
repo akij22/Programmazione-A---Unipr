@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/achillerossi/Documents/UNIPR/C++/task5/cmake-build-debug"
+			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Tasks/task5/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "29"
+			"value" : "30"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/achillerossi/Documents/UNIPR/C++/task5/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Tasks/task5/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/achillerossi/Documents/UNIPR/C++/task5"
+			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Tasks/task5"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -771,7 +771,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -863,7 +863,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29"
+			"value" : "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1127,7 +1127,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/achillerossi/Documents/UNIPR/C++/task5/cmake-build-debug"
+			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Tasks/task5/cmake-build-debug"
 		},
 		{
 			"name" : "task5_IS_TOP_LEVEL",
@@ -1151,7 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/achillerossi/Documents/UNIPR/C++/task5"
+			"value" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Tasks/task5"
 		}
 	],
 	"kind" : "cache",

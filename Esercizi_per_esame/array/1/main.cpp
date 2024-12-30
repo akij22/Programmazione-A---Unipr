@@ -128,7 +128,12 @@ int main() {
     cout << endl;
     cout << nSottoSequenze(a4, 7, 3) << endl;
 
+    cout << "Array prima: ";
+    printArray(a5, 6);
+
     reverseArray(a5, 6);
+
+    cout << "Array dopo: ";
 
     printArray(a5, 6);
     return 0;

@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "task5::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-task5-Debug-612eb72bf5514c616965.json",
+					"jsonFile" : "target-task5-Debug-00120260404e23d15ab3.json",
 					"name" : "task5",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/achillerossi/Documents/UNIPR/C++/task5/cmake-build-debug",
-		"source" : "/Users/achillerossi/Documents/UNIPR/C++/task5"
+		"build" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Tasks/task5/cmake-build-debug",
+		"source" : "/Users/achillerossi/Documents/UNIPR/C++/Programmazione A/Tasks/task5"
 	},
 	"version" : 
 	{

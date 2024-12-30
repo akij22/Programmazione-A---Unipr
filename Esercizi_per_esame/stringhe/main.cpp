@@ -126,6 +126,62 @@ int countUnique(char* str) {
 }
 
 
+int countParole (char* str) {
+    if (str[0] == '\0')
+        return 0;
+
+    int countParole = 0;
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        while (str[i] != ' ' && str[i] != '\0')
+            i++;
+        countParole++;
+    }
+    return countParole;
+}
+
+
+void printSubString(char* str, int len) {
+    for (int i = 0; i < len; i++) {
+        for (int j = i; j < len; j++) {
+
+            for (int k = i; k <= j; k++) {
+                cout << str[k];
+            }
+            cout << endl;
+        }
+    }
+
+}
+
+bool findSottostringa(char* str, char* substr) {
+
+    bool final = false;
+
+    char* subStr = new char[getLen(str) + 1];
+
+    if (str[0] == '\0')
+        return false;
+
+    int count = 0;
+    for (int i = 0; i < getLen(str); i++) {
+        for (int j = i; j < getLen(str); j++) {
+            count = 0;
+
+            for (int k = i; k <= j; k++) {
+                subStr[count] = str[k];
+                count++;
+            }
+
+            subStr[count] = '\0';
+            if (strcmp(subStr, substr) == 0)
+                final = true;
+        }
+    }
+
+    delete [] subStr;
+    return final;
+}
 
 
 int main() {
@@ -143,6 +199,7 @@ int main() {
     delete[] newS2;
 
     char str[101] = {'h', 'e', 'l', 'l', 'o', '\0'};
+    char strr[101] = {'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '\0'};
 
     cout << "Inserire la prima parola: ";
     cin.getline(str1, 100);
@@ -172,7 +229,7 @@ int main() {
 
     char* newS = replace_spaces(string);
 
-    cout << newS << endl;
+    cout << endl << newS << endl;
 
     delete newS;
 
@@ -180,6 +237,19 @@ int main() {
     cout << endl;
 
     cout << "Numero di caratteri unici: " << countUnique(str) << endl;
+
+    cout << countParole(strr) << endl;
+
+    char string2[100] = {'c', 'i', 'a', 'o', '\0'};
+    char sub[100] = {'i', 'a', 'o', '\0'};
+
+    // char string3[4] = {'a', 'b', 'c', '\0'};
+
+
+    printSubString(string2, 4);
+    cout << endl;
+
+    cout << findSottostringa(string2, sub) << endl;;
 
 
 
