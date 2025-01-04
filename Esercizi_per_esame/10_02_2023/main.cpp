@@ -133,11 +133,13 @@ int getDimString(char* string) {
 }
 
 
-char* trim(char* str, char c) {
+char* trim (char* str, char c) {
     int dim = getDimString(str);
     char* newS = new char[dim + 1];
 
     strcpy (newS, str);
+    newS[dim] = '\0';
+
     for (int i = 0; newS[i] != '\0'; i++) {
         if (newS[i] == c) {
             for (int j = i; newS[j] != '\0'; j++) {
@@ -148,7 +150,6 @@ char* trim(char* str, char c) {
 
     }
 
-    newS[dim] = '\0';
     return newS;
 }
 
@@ -199,6 +200,7 @@ int main() {
 
     cout << newS << endl;
 
+    // char l = newS[3];
     delete[] newS;
 
 

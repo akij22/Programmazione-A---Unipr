@@ -119,6 +119,6 @@ int main() {
 
     printList(newList);
 
-    
+
     return 0;
 }

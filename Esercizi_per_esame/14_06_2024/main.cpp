@@ -26,6 +26,19 @@ void shift_left(int arr[], int n, int k) {
     }
 }
 
+void shift_left_v2 (int arr[], int n, int k) {
+    int backup = k;
+    for (int i = 0; i <= k; i++) {
+        arr[i] = arr[backup];
+        backup++;
+    }
+
+    backup = k + 1;
+    for (int i = backup; i < n; i++)
+        arr[i] = 0;
+}
+
+
 void printArray(int arr[], int dim) {
     for (int i = 0; i < dim; i++)
         cout << arr[i] << " ";
@@ -148,6 +161,7 @@ int main() {
     char s2[101] = {'1', '2', '3', '4', '\0'};
 
     int arr[5] = {1, 2, 3, 4, 5};
+    int arrV2[5] = {1, 2, 3, 4, 5};
 
     shift_left(arr, 5, 2);
 
@@ -179,6 +193,10 @@ int main() {
     rotate(list1);
 
     printList(list1);
+
+    shift_left(arrV2, 5, 2);
+
+    printArray(arrV2, 5);
 
 
 
