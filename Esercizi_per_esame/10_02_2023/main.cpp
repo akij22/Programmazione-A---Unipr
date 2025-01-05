@@ -196,7 +196,7 @@ int main() {
     cout << "Inserisci stringa: ";
     cin.getline(string, 100, '\n');
 
-    char* newS = trim(string, 'c');
+    char* newS = trim(string, 'o');
 
     cout << newS << endl;
 

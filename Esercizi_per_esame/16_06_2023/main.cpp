@@ -37,6 +37,37 @@ char* noVowels(char* str) {
     return newS;
 }
 
+int countFrequence(int a[], int n, int num) {
+
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (a[i] == num)
+            count++;
+    }
+
+    return count;
+}
+
+int mostFrequent(int a[], int n) {
+
+    int element = 0;
+    int count = 0;
+    int max = 0;
+
+    for (int i = 0; i < n; i++) {
+        count = countFrequence(a, n, a[i]);
+
+        if (count >= max) {
+            element = a[i];
+            max = count;
+        }
+
+    }
+
+    return element;
+
+}
+
 int main() {
 
     char s[51];
@@ -51,6 +82,12 @@ int main() {
     char* sNew = noVowels(s);
 
     cout << sNew << endl;
+
+    delete [] sNew;
+
+    int a[5] = {1, 1, 1, 4, 4};
+
+    cout << mostFrequent(a, 5) << endl;
 
 
     return 0;

@@ -280,6 +280,61 @@ void removeHead(node* &list) {
     delete toDelete;
 }
 
+void removeByIndice(node* &list, int indice) {
+    if (list == nullptr)
+        return;
+
+    if (indice == 0) {
+        removeHead(list);
+        return;
+    }
+
+    indice = indice - 1;
+    int i = 0;
+    node* cursor = list;
+
+    while (i != indice) {
+        i++;
+        cursor = cursor->next;
+    }
+
+    node* toDelete = cursor->next;
+    cursor->next = cursor->next->next;
+    delete toDelete;
+
+}
+
+void removeByElement(node* list, int e) {
+    if (list == nullptr)
+        return;
+
+    node* cursor = list;
+    node* prev = nullptr;
+
+    int indice = 0;
+
+    while (cursor != nullptr) {
+
+
+        if (cursor->data > e) {
+            if (prev == nullptr) {
+                removeByIndice(list, indice);
+                cursor = list;
+            } else {
+                prev->next = cursor->next;
+                delete cursor;
+                cursor = prev->next;
+            }
+
+        } else {
+            prev = cursor;
+            cursor = cursor->next;
+        }
+        indice++;
+
+    }
+}
+
 
 int main() {
 
@@ -292,6 +347,7 @@ int main() {
     node* list5 = nullptr;
     node* list6 = nullptr;
     node* list7 = nullptr;
+    node* list8 = nullptr;
 
     addOnTail(list3, 12);
     addOnTail(list3, 3);
@@ -329,6 +385,13 @@ int main() {
     addOnTail(list7, 3);
     addOnTail(list7, 2);
     addOnTail(list7, 1);
+
+
+    addOnTail(list8, 1);
+    addOnTail(list8, 14);
+    addOnTail(list8, 7);
+    addOnTail(list8, 5);
+    addOnTail(list8, 6);
 
     printList(list1);
     printList(list2);
@@ -385,6 +448,15 @@ int main() {
 
     removeHead(list7);
     printList(list7);
+
+
+    cout << endl << "Lista 8" << endl;
+
+    printList(list8);
+
+    removeByElement(list8, 5);
+
+    printList(list8);
 
 
 

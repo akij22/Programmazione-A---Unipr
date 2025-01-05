@@ -104,8 +104,9 @@ void rotate (node* &list) {
     }
 
     cursor->next= list;
-    prev->next = nullptr;
     list = cursor;
+    prev->next = nullptr;
+
 
 }
 
