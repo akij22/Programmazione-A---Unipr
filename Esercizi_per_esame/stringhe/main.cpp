@@ -183,6 +183,27 @@ bool findSottostringa(char* str, char* substr) {
     return final;
 }
 
+int find_longest_word_lenght(char* s) {
+    if (s[0] == '\0')
+        return 0;
+
+    int max = 0;
+    int count = 0;
+
+    for (int i = 0; s[i] != '\0'; i++) {
+        count = 0;
+        while (s[i] != ' ' && s[i] != '\0') {
+            count++;
+            i++;
+        }
+
+        if (count >= max)
+            max = count;
+
+    }
+    return max;
+}
+
 
 int main() {
 
@@ -199,7 +220,7 @@ int main() {
     delete[] newS2;
 
     char str[101] = {'h', 'e', 'l', 'l', 'o', '\0'};
-    char strr[101] = {'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '\0'};
+    char strr[101] = {'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', 'd', 'd', '\0'};
 
     cout << "Inserire la prima parola: ";
     cin.getline(str1, 100);
@@ -252,6 +273,8 @@ int main() {
     cout << endl;
 
     cout << findSottostringa(string2, sub) << endl;
+
+    cout << find_longest_word_lenght(strr) << endl;
 
 
 

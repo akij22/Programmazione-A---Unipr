@@ -280,13 +280,13 @@ void removeHead(node* &list) {
     delete toDelete;
 }
 
-void removeByIndice(node* &list, int indice) {
+node* removeByIndice(node* &list, int indice) {
     if (list == nullptr)
-        return;
+        return nullptr;
 
     if (indice == 0) {
         removeHead(list);
-        return;
+        return nullptr;
     }
 
     indice = indice - 1;
@@ -302,6 +302,8 @@ void removeByIndice(node* &list, int indice) {
     cursor->next = cursor->next->next;
     delete toDelete;
 
+    return cursor;
+
 }
 
 void removeByElement(node* list, int e) {
@@ -311,14 +313,11 @@ void removeByElement(node* list, int e) {
     node* cursor = list;
     node* prev = nullptr;
 
-    int indice = 0;
-
     while (cursor != nullptr) {
-
 
         if (cursor->data > e) {
             if (prev == nullptr) {
-                removeByIndice(list, indice);
+                removeHead(list);
                 cursor = list;
             } else {
                 prev->next = cursor->next;
@@ -330,8 +329,29 @@ void removeByElement(node* list, int e) {
             prev = cursor;
             cursor = cursor->next;
         }
-        indice++;
 
+    }
+}
+
+
+void removeDuplicates(node* &list) {
+    node* cursor = list;
+
+    while (cursor != nullptr) {
+
+        node* cursor2 = cursor;
+
+        while (cursor2->next != nullptr) {
+            if (cursor2->next->data == cursor->data) {
+
+                node* temp = cursor2->next;
+                cursor2->next = cursor2->next->next;
+                delete temp;
+            } else {
+                cursor2 = cursor2->next;
+            }
+        }
+        cursor = cursor->next;
     }
 }
 
@@ -348,6 +368,7 @@ int main() {
     node* list6 = nullptr;
     node* list7 = nullptr;
     node* list8 = nullptr;
+    node* list9 = nullptr;
 
     addOnTail(list3, 12);
     addOnTail(list3, 3);
@@ -392,6 +413,12 @@ int main() {
     addOnTail(list8, 7);
     addOnTail(list8, 5);
     addOnTail(list8, 6);
+
+    addOnTail(list9, 1);
+    addOnTail(list9, 14);
+    addOnTail(list9, 14);
+    addOnTail(list9, 1);
+    addOnTail(list9, 6);
 
     printList(list1);
     printList(list2);
@@ -457,6 +484,9 @@ int main() {
     removeByElement(list8, 5);
 
     printList(list8);
+
+    removeDuplicates(list9);
+    printList(list9);
 
 
 
