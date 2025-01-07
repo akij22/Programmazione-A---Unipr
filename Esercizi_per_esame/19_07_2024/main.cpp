@@ -177,7 +177,7 @@ void removeDuplicatesInPlace(char* &str) {
             if (str[i] == str[j] && found) {
                 for (int k = j; str[k] != '\0'; k++)
                     str[k] = str[k+1];
-                j = 0;
+
                 found = false;
 
             } else if (str[i] == str[j] && !found)
