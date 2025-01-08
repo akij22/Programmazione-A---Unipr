@@ -112,7 +112,8 @@ void removeDuplicates (node* &list) {
     node* cursor2 = list;
     node* cursor = nullptr;
     while (cursor2 != nullptr) {
-        int currentDato = cursor2->dato;
+        
+        // int currentDato = cursor2->dato;
         int check = 0;
 
         // Resetto il secondo puntatore
@@ -121,11 +122,11 @@ void removeDuplicates (node* &list) {
 
         for (int i = 0; i < getLenList(list); i++) {
             bool found = false;
-            if (currentDato == cursor->dato && check != 0)
+            if (cursor2->dato == cursor->dato && check != 0)
                 found = true;
 
 
-            else if (currentDato == cursor->dato && check == 0)
+            else if (cursor2->dato == cursor->dato && check == 0)
                 check++;
 
 

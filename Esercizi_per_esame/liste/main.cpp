@@ -572,7 +572,7 @@ int main() {
     addOnTail(checkSub, 3);
     addOnTail(checkSub, 4);
 
-    cout << find_sub_list(checkSub, 4) << endl;
+    cout << find_sub_list(checkSub, 10) << endl;
 
 
 
