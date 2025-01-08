@@ -99,6 +99,25 @@ void reverseArray(int a[], int n) {
     }
 }
 
+void ruota_avanti(int a[], int n) {
+    int element = a[n - 1];
+
+    for (int i = n -1; i > 0; i--)
+        a[i] = a[i - 1];
+
+    a[0] = element;
+}
+
+void ruota_indietro(int a[], int n) {
+    int element = a[0];
+
+    for (int i = 0; i < n - 1; i++) {
+        a[i] = a[i + 1];
+    }
+
+    a[n - 1] = element;
+}
+
 int main() {
 
     int a[5] = {1, 2, 7, 1, 7};
@@ -137,5 +156,13 @@ int main() {
     cout << "Array dopo: ";
 
     printArray(a5, 6);
+
+    cout << endl;
+    ruota_avanti(a, 5);
+    printArray(a, 5);
+
+    cout << endl;
+    ruota_indietro(a, 5);
+    printArray(a, 5);
     return 0;
 }

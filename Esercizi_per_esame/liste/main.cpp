@@ -356,6 +356,60 @@ void removeDuplicates(node* &list) {
 }
 
 
+void reverse (node* &list) {
+    if (list == nullptr || list->next == nullptr)
+        return;
+
+    node* cursor = list;
+    node* prev = nullptr;
+    node* nxt = nullptr;
+
+    while (cursor != nullptr) {
+        nxt = cursor->next;
+        cursor->next = prev;
+        prev = cursor;
+        cursor = nxt;
+    }
+
+    list = prev;
+}
+
+void concat_iter(node* &list1, node* list2) {
+
+    // Caso base
+    if (list2 == nullptr)
+        return;
+
+    addOnTail(list1, list2->data);
+
+    return concat_iter(list1, list2->next);
+}
+
+
+bool find_sub_list(node* list, int k) {
+    if (list == nullptr)
+        return false;
+
+    bool final = false;
+    int sum = 0;
+
+    for (node* cursor = list; cursor != nullptr; cursor = cursor->next) {
+        for (node* cursor2 = cursor; cursor2 != nullptr; cursor2 = cursor2->next) {
+            sum = 0;
+            for (node* cursor3 = cursor; cursor3 != cursor2->next; cursor3 = cursor3->next) {
+                sum += cursor3->data;
+            }
+
+            if (sum == k) {
+                final = true;
+                cout << "Trovata sottolista valida a iterazione " << cursor->data << endl;
+            }
+        }
+    }
+
+    return final;
+}
+
 int main() {
 
 
@@ -369,6 +423,8 @@ int main() {
     node* list7 = nullptr;
     node* list8 = nullptr;
     node* list9 = nullptr;
+
+    node* checkSub = nullptr;
 
     addOnTail(list3, 12);
     addOnTail(list3, 3);
@@ -488,6 +544,35 @@ int main() {
     removeDuplicates(list9);
     printList(list9);
 
+    cout << endl;
+
+    printList(list9);
+
+    reverse(list9);
+
+    printList(list9);
+
+    cout << endl;
+
+
+    cout << "Lista 5: ";
+    printList(list5);
+
+    cout << "Lista 4: ";
+    printList(list4);
+
+    concat_iter(list5, list4);
+
+    cout << endl;
+    printList(list5);
+
+
+    addOnTail(checkSub, 1);
+    addOnTail(checkSub, 2);
+    addOnTail(checkSub, 3);
+    addOnTail(checkSub, 4);
+
+    cout << find_sub_list(checkSub, 4) << endl;
 
 
 
