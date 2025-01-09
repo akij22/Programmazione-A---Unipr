@@ -141,6 +141,29 @@ void removeDuplicates (node* &list) {
     }
 }
 
+void removeDuplicates_V2 (node* &list) {
+    if (list == nullptr)
+        return;
+
+    node* cursor = list;
+    node* cursor2 = nullptr;
+
+    while (cursor != nullptr) {
+        cursor2 = cursor;
+
+        while (cursor2->next != nullptr) {
+            if (cursor2->next->dato == cursor->dato) {
+                node* toDelete = cursor2->next;
+                cursor2->next = cursor2->next->next;
+                delete toDelete;
+            } else
+                cursor2 = cursor2->next;
+        }
+        cursor = cursor->next;
+    }
+
+}
+
 
 char* remove_double(char* str) {
     char* newS = new char[getLen(str)];
@@ -173,11 +196,15 @@ void removeDuplicatesInPlace(char* &str) {
         return;
 
     for (int i = 0; str[i] != '\0'; i++) {
+
         bool found = false;
+
         for (int j = 0; str[j] != '\0'; j++) {
+
             if (str[i] == str[j] && found) {
                 for (int k = j; str[k] != '\0'; k++)
-                    str[k] = str[k+1];
+
+                    str[k] = str[k + 1];
 
                 found = false;
 
@@ -192,10 +219,13 @@ void removeDuplicatesInPlace(char* &str) {
 int main() {
 
 
-    char newString[100];
+    char newString[101];
 
     cout << "Inserisci stringa: ";
-    cin.getline(newString, 99, '\n');
+    cin.getline(newString, 100, '\n');
+
+    if (cin.fail())
+        return -1;
 
     reverseString(newString);
 
@@ -211,6 +241,15 @@ int main() {
     addOnTail(list1, 30);
     addOnTail(list1, 30);
 
+    node* list2 = nullptr;
+
+    addOnTail(list2, 10);
+    addOnTail(list2, 10);
+    addOnTail(list2, 20);
+    addOnTail(list2, 20);
+    addOnTail(list2, 30);
+    addOnTail(list2, 30);
+
 
     printList(list1);
 
@@ -221,8 +260,12 @@ int main() {
     removeDuplicates(list1);
     printList(list1);
 
+    cout << "Versione alternativa: ";
+    removeDuplicates_V2(list2);
+    printList(list2);
 
-    // Da fare parte di inserimento chiesta all'utente, ciò e' stato
+
+    // Da fare parte di inserimento chiesta all'utente, cio' e' stato
     // fatto per velocizzare la fase di test
     char string[100] = {'a', 'a', 'b', 'b', 'b', 'c', 'c', 'c'};
 
@@ -230,7 +273,7 @@ int main() {
 
     cout << newS << endl;
 
-    delete newS;
+    delete [] newS;
 
 
     char* newS2 = new char[100];

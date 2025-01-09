@@ -26,6 +26,35 @@ int compact (int a[], int n, int b[]) {
     return count;
 }
 
+bool isMultiple(int a[], int dato, int n) {
+    bool final = false;
+    int check = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (a[i] == dato && check > 0)
+            final = true;
+        else if (a[i] == dato && check == 0)
+            check++;
+    }
+    return final;
+}
+
+
+int compact_V2(int a[], int n, int b[]) {
+    int count = 0;
+    int j = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (!isMultiple(a, a[i], n)) {
+            b[j] = a[i];
+            j++;
+            count++;
+        }
+    }
+
+    return count;
+}
+
 void printArray (int a[], int n) {
     for (int i = 0; i < n; i++)
         cout << a[i] << " ";
@@ -128,10 +157,15 @@ int main() {
 
 
     int* b = new int[5];
+    int* b2 = new int[5];
 
     int result = compact(a, 5, b);
 
+    int result2 = compact_V2(a, 5, b2);
+
     cout << result << endl;
+
+    cout << "Risultato versione differente: " << result2 << endl;
 
     printArray(b, result);
 
@@ -144,6 +178,7 @@ int main() {
     cout << "Trovata " <<getZeroSubSequence(a3, 6) << " sottosequenza" << endl;
 
     delete [] b;
+    delete [] b2;
 
     cout << endl;
     cout << nSottoSequenze(a4, 7, 3) << endl;

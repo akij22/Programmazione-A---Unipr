@@ -38,7 +38,7 @@ int getDim (char* str) {
 
 
 char* replace_spaces(char* str) {
-    char* newS = new char[getDim(str)];
+    char* newS = new char[getDim(str) + 1];
 
     if (str[0] == '\0')
         return newS;

@@ -11,8 +11,8 @@ void removeDuoplicates_inPlace(char* &str) {
         for (int j = 0; str[j] != '\0'; j++) {
             if (str[i] == str[j] && found == true) {
                 for (int k = j; str[k] != '\0'; k++)
-                    str[k] = str[k+1];
-                i = 0;
+                    str[k] = str[k + 1];
+                // i = 0;
             } else if (str[i] == str[j] && found == false)
                 found = true;
         }
@@ -25,7 +25,7 @@ void removeDuoplicates_inPlace(char* &str) {
 
 int main() {
 
-    char str[100] = {'c', 'c', 'c' , 'i', 'i', 'a', 'c', 'o', 'c', '\0'};
+    char str[100] = {'c', 'c', 'c' , 'i', 'i', 'a', 'c', 'o', 'c', 'o', '0', '\0'};
 
     char* str2 = new char[100];
 
