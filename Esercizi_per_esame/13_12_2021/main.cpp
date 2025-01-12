@@ -130,6 +130,22 @@ int getLen(char* str) {
     return count;
 }
 
+void reverse (int a[], int n) {
+    int j = n - 1;
+
+    for (int i = 0; i < n / 2; i++) {
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+        j--;
+    }
+}
+
+void printArray(int a[], int n) {
+    for (int i = 0; i < n; i++)
+        cout << a[i] << " ";
+    cout << endl;
+}
 
 
 
@@ -137,6 +153,9 @@ int getLen(char* str) {
 int main() {
     int array1[] = {7, 6, 4, -1, 2, 5, 12};
     int array2[] = {6, 7, 4, 5, 2};
+
+    reverse(array2, 5);
+    printArray(array2, 5);
 
     int count = coincideArray(array1, array2, 7, 5);
 

@@ -147,6 +147,17 @@ void ruota_indietro(int a[], int n) {
     a[n - 1] = element;
 }
 
+
+void filterOdd(int a[], int &n) {
+    for (int i = 0; i < n - 1; i++) {
+        if (a[i] % 2 == 0) {
+            for (int j = i; j < n - 1; j++)
+                a[j] = a[j + 1];
+            n--;
+        }
+    }
+}
+
 int main() {
 
     int a[5] = {1, 2, 7, 1, 7};
@@ -154,6 +165,12 @@ int main() {
     int a3[6] = {2, 3, -2, 1, -2, 5};
     int a4[7] = {1, 2, -3, 7, -1, 4, 3};
     int a5[6] = {1, 2, 3, 4, 5, 6};
+    int a6[5] = {1, 2, 3, 4, 5};
+
+    int dim = 5;
+    filterOdd(a6, dim);
+
+    printArray(a6, dim);
 
 
     int* b = new int[5];

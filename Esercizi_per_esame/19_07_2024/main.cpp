@@ -166,7 +166,7 @@ void removeDuplicates_V2 (node* &list) {
 
 
 char* remove_double(char* str) {
-    char* newS = new char[getLen(str)];
+    char* newS = new char[getLen(str) + 1];
 
     newS[getLen(str)] = '\0';
 
@@ -267,7 +267,7 @@ int main() {
 
     // Da fare parte di inserimento chiesta all'utente, cio' e' stato
     // fatto per velocizzare la fase di test
-    char string[100] = {'a', 'a', 'b', 'b', 'b', 'c', 'c', 'c'};
+    char string[100] = {'a', 'a', 'b', 'b', 'b', 'c', 'c', 'c', 'f', 'a', '\0'};
 
     char* newS = remove_double(string);
 
@@ -279,6 +279,7 @@ int main() {
     char* newS2 = new char[100];
     strcpy(newS2, string);
 
+    cout << "Versione in place di removeDuplicates:" << endl;
     removeDuplicatesInPlace(newS2);
 
 

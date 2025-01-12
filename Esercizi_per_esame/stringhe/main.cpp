@@ -204,6 +204,19 @@ int find_longest_word_lenght(char* s) {
     return max;
 }
 
+int countWords(char* str) {
+    if (str[0] == '\0')
+        return 0;
+
+    int count = 0;
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == ' ')
+            count++;
+    }
+    count++;
+    return count;
+
+}
 
 int main() {
 
@@ -275,6 +288,21 @@ int main() {
     cout << findSottostringa(string2, sub) << endl;
 
     cout << find_longest_word_lenght(strr) << endl;
+
+    char str8[101];
+
+    // Pulisco lo stream per liberare da vecchi input
+    cin.clear();
+
+    fflush(stdin);
+
+    cout << "Inserisci stringa: ";
+    cin.getline(str8, 100);
+
+    if (cin.fail())
+        return -1;
+
+    cout << countWords(str8) << endl;
 
 
 

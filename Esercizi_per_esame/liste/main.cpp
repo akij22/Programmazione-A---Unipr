@@ -184,6 +184,17 @@ bool isDescending (node* list) {
     return check;
 }
 
+bool isDescending_rec(node* list) {
+    if (list->next == nullptr)
+        return true;
+
+    if (list->data < list->next->data)
+        return false;
+    else
+        return isDescending_rec(list->next);
+
+}
+
 bool equals(node* list1, node* list2) {
     if (list1 == nullptr && list2 == nullptr) {
         return true;
@@ -312,11 +323,12 @@ void removeByElement(node* list, int e) {
 
     node* cursor = list;
     node* prev = nullptr;
+    bool check = false;
 
     while (cursor != nullptr) {
 
         if (cursor->data > e) {
-            if (prev == nullptr) {
+            if (!check) {
                 removeHead(list);
                 cursor = list;
             } else {
@@ -328,6 +340,7 @@ void removeByElement(node* list, int e) {
         } else {
             prev = cursor;
             cursor = cursor->next;
+            check = true;
         }
 
     }
@@ -502,6 +515,11 @@ int main() {
     cout << endl;
     cout << desc << endl;
 
+    bool desc2 = isDescending_rec(list3);
+
+    cout << endl;
+    cout << "Output soluzione ricorsiva: " << desc2 << endl;
+
     cout << equals(list2, list4);
 
 
@@ -537,6 +555,7 @@ int main() {
 
     printList(list8);
 
+    cout << "Rimossi elementi" << endl;
     removeByElement(list8, 5);
 
     printList(list8);

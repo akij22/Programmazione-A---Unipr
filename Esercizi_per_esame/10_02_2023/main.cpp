@@ -143,7 +143,7 @@ char* trim (char* str, char c) {
     for (int i = 0; newS[i] != '\0'; i++) {
         if (newS[i] == c) {
             for (int j = i; newS[j] != '\0'; j++) {
-                newS[j] = newS[j+1];
+                newS[j] = newS[j + 1];
             }
             i = 0;
         }
