@@ -7,8 +7,8 @@
     <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
-    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
     <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="CppParameterNameHintsOptions" type="string" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
   </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
@@ -31,37 +31,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11a9dbb1-3c4e-4231-b8a9-2c4b4ac3c98e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../16_09_2022/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../16_09_2022/.idea/16_09_2022.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../16_09_2022/.idea/editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../16_09_2022/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../16_09_2022/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../16_09_2022/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01_09_2023/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../01_09_2023/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10_02_2023/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../10_02_2023/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10_02_2023/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../10_02_2023/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10_02_2023/cmake-build-debug/10_02_2023" beforeDir="false" afterPath="$PROJECT_DIR$/../10_02_2023/cmake-build-debug/10_02_2023" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10_02_2023/cmake-build-debug/CMakeFiles/10_02_2023.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../10_02_2023/cmake-build-debug/CMakeFiles/10_02_2023.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10_02_2023/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../10_02_2023/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10_02_2023/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../10_02_2023/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_12_2021/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../13_12_2021/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_12_2021/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../13_12_2021/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_12_2021/cmake-build-debug/CMakeFiles/array.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../13_12_2021/cmake-build-debug/CMakeFiles/array.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_12_2021/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../13_12_2021/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_12_2021/cmake-build-debug/array" beforeDir="false" afterPath="$PROJECT_DIR$/../13_12_2021/cmake-build-debug/array" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../13_12_2021/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../13_12_2021/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../16_02_2024/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../16_02_2024/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../16_06_2023/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../16_06_2023/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14_06_2024/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../14_06_2024/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14_06_2024/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../14_06_2024/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14_06_2024/cmake-build-debug/14_06_2024" beforeDir="false" afterPath="$PROJECT_DIR$/../14_06_2024/cmake-build-debug/14_06_2024" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14_06_2024/cmake-build-debug/CMakeFiles/14_06_2024.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../14_06_2024/cmake-build-debug/CMakeFiles/14_06_2024.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../14_06_2024/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../14_06_2024/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/19_07_2024" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/19_07_2024" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/CMakeFiles/19_07_2024.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/CMakeFiles/19_07_2024.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../19_07_2024/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../19_07_2024/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../30_06_2023/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../30_06_2023/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../30_06_2023/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../30_06_2023/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../30_06_2023/cmake-build-debug/30_06_2023" beforeDir="false" afterPath="$PROJECT_DIR$/../30_06_2023/cmake-build-debug/30_06_2023" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../30_06_2023/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../30_06_2023/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../28_06_2024/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../28_06_2024/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../array/1/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../array/1/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../array/1/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../array/1/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../array/1/cmake-build-debug/1" beforeDir="false" afterPath="$PROJECT_DIR$/../array/1/cmake-build-debug/1" afterDir="false" />
@@ -108,6 +89,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
@@ -190,6 +173,7 @@
       <workItem from="1736351229493" duration="324000" />
       <workItem from="1736419475590" duration="949000" />
       <workItem from="1736690650897" duration="732000" />
+      <workItem from="1736953693283" duration="891000" />
     </task>
     <servers />
   </component>
@@ -200,5 +184,16 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>321</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

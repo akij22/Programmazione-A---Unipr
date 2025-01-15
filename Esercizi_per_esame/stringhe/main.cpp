@@ -218,12 +218,27 @@ int countWords(char* str) {
 
 }
 
+bool palindroma(char* str) {
+    if (str[0] == '\0')
+        return false;
+
+    int len = strlen(str);
+
+    for (int i = 0; i <= strlen(str) / 2; i++) {
+        if (str[i] != str[len - 1])
+            return false;
+        len--;
+    }
+    return true;
+}
+
 int main() {
 
     // Lunghezza max della stringa = 100
     char str1[101], str2[101], str3[51];
 
     char str4[5] = {'c', 'i', 'a', 'o', '\0'};
+    char pal[6] = {'m', 'a', 'd', 'a', 'm', '\0'};
 
     char* newS2 = reverseNew(str4);
 
@@ -303,6 +318,8 @@ int main() {
         return -1;
 
     cout << countWords(str8) << endl;
+
+    cout << palindroma(pal) << endl;
 
 
 

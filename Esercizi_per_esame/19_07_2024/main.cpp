@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace  std;
+using namespace std;
 
 
 struct node {
@@ -190,6 +190,20 @@ char* remove_double(char* str) {
     return newS;
 }
 
+
+void removeDoubleInPlace(char* &str) {
+    if (str[0] == '\0')
+        return;
+
+    for (int i  = 0; str[i] != '\0'; i++) {
+        if (i != 0 && str[i] == str[i - 1]) {
+            for (int j = i; str[j] != '\0'; j++)
+                str[j] = str[j + 1];
+            i = 0;
+        }
+    }
+}
+
 void removeDuplicatesInPlace(char* &str) {
 
     if (str[0] == '\0')
@@ -267,13 +281,22 @@ int main() {
 
     // Da fare parte di inserimento chiesta all'utente, cio' e' stato
     // fatto per velocizzare la fase di test
-    char string[100] = {'a', 'a', 'b', 'b', 'b', 'c', 'c', 'c', 'f', 'a', '\0'};
+    char string[100] = {'a', 'a', 'b', 'b', 'b', 'c', 'c', 'c', 'f', 'a', 'a', '\0'};
+
+    char* str = new char[100];
+
+    strcpy(str, string);
 
     char* newS = remove_double(string);
 
     cout << newS << endl;
 
     delete [] newS;
+
+    removeDoubleInPlace(str);
+
+    cout << "Versione alternativa in place: " << str << endl;
+    delete [] str;
 
 
     char* newS2 = new char[100];

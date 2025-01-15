@@ -330,7 +330,7 @@ void removeByElement(node* list, int e) {
         if (cursor->data > e) {
             if (!check) {
                 removeHead(list);
-                cursor = list;
+                // cursor = list;
             } else {
                 prev->next = cursor->next;
                 delete cursor;
@@ -421,6 +421,34 @@ bool find_sub_list(node* list, int k) {
     }
 
     return final;
+}
+
+int countElements(node* l1) {
+    if (l1 == nullptr)
+        return 0;
+
+    return 1 + countElements(l1->next);
+}
+
+node* sommaViciniV2(node* list) {
+    if (list == nullptr || list->next == nullptr || list->next->next == nullptr)
+        return nullptr;
+
+    node* newList = nullptr;
+    node* cursor = list;
+    node* prev = nullptr;
+    while (cursor != nullptr) {
+        if (cursor == list || cursor->next == nullptr) {
+            addOnTail(newList, cursor->data);
+            prev = cursor;
+            cursor = cursor->next;
+        } else {
+            addOnTail(newList, prev->data + cursor->next->data);
+            prev = cursor;
+            cursor = cursor->next;
+        }
+    }
+    return newList;
 }
 
 int main() {
@@ -592,6 +620,22 @@ int main() {
     addOnTail(checkSub, 4);
 
     cout << find_sub_list(checkSub, 10) << endl;
+
+
+    printList(list6);
+    cout << countElements(list6);
+
+    node* sum1 = nullptr;
+    addOnTail(sum1, 10);
+    addOnTail(sum1, 20);
+    addOnTail(sum1, 30);
+    addOnTail(sum1, 40);
+    addOnTail(sum1, 50);
+
+    node* sumFinal = sommaViciniV2(sum1);
+
+    cout << endl;
+    printList(sumFinal);
 
 
 

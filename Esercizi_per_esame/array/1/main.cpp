@@ -131,10 +131,16 @@ void reverseArray(int a[], int n) {
 void ruota_avanti(int a[], int n) {
     int element = a[n - 1];
 
-    for (int i = n -1; i > 0; i--)
+    for (int i = n - 1; i > 0; i--)
         a[i] = a[i - 1];
 
     a[0] = element;
+}
+
+void ruotaAvanti_kVolte(int a[], int k, int n) {
+    for (int i = 0; i < k; i++) {
+        ruota_avanti(a, n);
+    }
 }
 
 void ruota_indietro(int a[], int n) {
@@ -216,5 +222,11 @@ int main() {
     cout << endl;
     ruota_indietro(a, 5);
     printArray(a, 5);
+
+
+    int a7[5] = {1, 2, 3, 4, 5};
+    ruotaAvanti_kVolte(a7, 3, 5);
+    printArray(a7, 5);
+
     return 0;
 }
