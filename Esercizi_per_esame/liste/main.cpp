@@ -1,5 +1,4 @@
 #include <iostream>
-#include <list>
 using namespace std;
 
 
@@ -461,6 +460,37 @@ node* sommaViciniV2(node* list) {
     return newList;
 }
 
+bool isPresent(node* list, int dato) {
+    if (list == nullptr)
+        return false;
+
+    while (list != nullptr) {
+        if (list->data == dato)
+            return true;
+
+        list = list->next;
+    }
+    return false;
+}
+
+
+node* intersectLists(node* l1, node* l2) {
+    if (l1 == nullptr && l2 == nullptr)
+        return nullptr;
+
+    node* finalList = nullptr;
+    node* cursor1 = l1;
+    node* cursor2 = l2;
+
+    while (cursor1 != nullptr && cursor2 != nullptr) {
+        if (isPresent(l2, cursor1->data) && !isPresent(finalList, cursor2->data))
+            addOnTail(finalList, cursor1->data);
+        cursor1 = cursor1->next;
+        cursor2 = cursor2->next;
+    }
+    return finalList;
+}
+
 int main() {
 
 
@@ -652,6 +682,24 @@ int main() {
 
     cout << endl;
     printList(sumFinal);
+
+    node* test1 = nullptr;
+    node* test2 = nullptr;
+    addOnTail(test1, 1);
+    addOnTail(test1, 2);
+    addOnTail(test1, 3);
+    addOnTail(test1, 4);
+    addOnTail(test1, 5);
+
+    addOnTail(test2, 3);
+    addOnTail(test2, 4);
+    addOnTail(test2, 4);
+    addOnTail(test2, 5);
+    addOnTail(test2, 6);
+
+    node* final = intersectLists(test1, test2);
+
+    printList(final);
 
 
 

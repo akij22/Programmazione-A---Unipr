@@ -38,6 +38,19 @@ void reverseString(char* string) {
 }
 
 
+void reverseString_V2(char* str) {
+    if (str[0] == '\0')
+        return;
+
+    int j = strlen(str) - 1;
+    for (int i = 0; i < strlen(str) / 2; i++) {
+        char c = str[i];
+        str[i] = str[j];
+        str[j] = c;
+        j--;
+    }
+}
+
 
 void addOnTail(node* &list, int dato) {
     node* newNode = new node;
@@ -308,6 +321,13 @@ int main() {
 
     cout << newS2 << endl;
     delete [] newS2;
+
+
+    char str1[100] = {'c' ,'i', 'a', 'o', '\0'};
+
+    reverseString_V2(str1);
+
+    cout << str1 << endl;
 
 
     return 0;

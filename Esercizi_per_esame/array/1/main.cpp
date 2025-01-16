@@ -199,6 +199,43 @@ void riordinaZeri_Inizio (int a[], int n) {
     }
 }
 
+void moveGreaterThanValue(int a[], int n, int value) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (a[j] > value && j != 0) {
+                int temp = a[j];
+                a[j] = a[j - 1];
+                a[j - 1] = temp;
+            }
+        }
+    }
+}
+
+
+void reorderEvenOdd(int a[], int n) {
+    int* temp = new int[n];
+    int index = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (a[i] % 2 == 0) {
+            temp[index] = a[i];
+            index++;
+        }
+    }
+
+    for (int i = 0; i < n; i++) {
+        if (a[i] % 2 != 0) {
+            temp[index] = a[i];
+            index++;
+        }
+    }
+
+    for (int i = 0; i < n; i++) {
+        a[i] = temp[i];
+    }
+    delete [] temp;
+}
+
 
 int main() {
 
@@ -210,6 +247,8 @@ int main() {
     int a6[5] = {1, 2, 3, 4, 5};
 
     int a8[5] = {1, 0, 5, 6, 0};
+    int a9[] = {7, 1, 5, 3, 8, 2, 4};
+    int a10[5] = {1, 2, 3, 4, 5};
 
     int dim = 5;
     filterOdd(a6, dim);
@@ -272,6 +311,12 @@ int main() {
     riordinaZeri_Inizio(a8, 5);
 
     printArray(a8, 5);
+
+    moveGreaterThanValue(a9, 7, 4);
+    printArray(a9, 7);
+
+    reorderEvenOdd(a10, 5);
+    printArray(a10, 5);
 
     return 0;
 }
