@@ -291,6 +291,16 @@ void removeHead(node* &list) {
     delete toDelete;
 }
 
+void removeHeadV2(node* &list) {
+    if (list == nullptr)
+        return;
+
+    node* newList = list->next;
+    delete list;
+    list = newList;
+}
+
+
 node* removeByIndice(node* &list, int indice) {
     if (list == nullptr)
         return nullptr;
@@ -519,6 +529,12 @@ int main() {
 
     printList(list1);
     printList(list2);
+
+    removeHeadV2(list2);
+    cout << "Rimozione testa" << endl;
+    printList(list2);
+
+
 
     node* new_list = concatena(list1, list2);
 

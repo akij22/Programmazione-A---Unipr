@@ -164,6 +164,42 @@ void filterOdd(int a[], int &n) {
     }
 }
 
+int findMax(int a[], int n) {
+    int max = 0;
+    for (int i = 0; i < n; i++) {
+        if (a[i] >= max)
+            max = a[i];
+    }
+    return max;
+}
+
+void moveMaxToFront(int a[], int n) {
+    int max = findMax(a, n);
+    int i2 = 0;
+    for (int i = 0; i < n; i++) {
+        if (a[i] == max)
+            i2 = i;
+    }
+
+    int temp = a[0];
+    a[0] = a[i2];
+    a[i2] = temp;
+}
+
+
+void riordinaZeri_Inizio (int a[], int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (a[j] == 0 && j != 0) {
+                int temp = a[j];
+                a[j] = a[j - 1];
+                a[j - 1] = temp;
+            }
+        }
+    }
+}
+
+
 int main() {
 
     int a[5] = {1, 2, 7, 1, 7};
@@ -172,6 +208,8 @@ int main() {
     int a4[7] = {1, 2, -3, 7, -1, 4, 3};
     int a5[6] = {1, 2, 3, 4, 5, 6};
     int a6[5] = {1, 2, 3, 4, 5};
+
+    int a8[5] = {1, 0, 5, 6, 0};
 
     int dim = 5;
     filterOdd(a6, dim);
@@ -227,6 +265,13 @@ int main() {
     int a7[5] = {1, 2, 3, 4, 5};
     ruotaAvanti_kVolte(a7, 3, 5);
     printArray(a7, 5);
+
+    moveMaxToFront(a7, 5);
+    printArray(a7, 5);
+
+    riordinaZeri_Inizio(a8, 5);
+
+    printArray(a8, 5);
 
     return 0;
 }
